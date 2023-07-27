@@ -1,0 +1,12 @@
+.parent{ 
+    width: 96%; 
+    padding: 2%; 
+    float: left;
+}
+
+.header{ 
+    width: 100%; 
+    margin-bottom: 2%; 
+     
+    float: left;
+}

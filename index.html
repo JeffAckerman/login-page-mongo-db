@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/styles-signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" defer></script>
+    <script src="ajax/validation.js" defer></script>
+    
+</head>
+<body>
+    
+   <div class="parent">
+    <div class="header"><h1 class="head">Sign Up Page</h1></div>
+   
+   <div id="signup">
+    <form action="php/signup.php" method="post" novalidate id="signup">
+        <div class="row mb-3">
+        <label for="name" class="col-sm-2 col-form-label">User Name<br> </label><br>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" name = "name" id="name" placeholder="JohnDoe" required><br>
+    </div>
+</div>
+<div class="row mb-3">
+<label for="email" class="col-sm-2 col-form-label">Email ID<br></label><br>        
+<div class="col-sm-4">
+         <input type="email" class="form-control" name = "email" id="email" placeholder="johndoe@example.com" required><br>
+    </div>
+</div>
+<div class="row mb-3">
+    <label for="password" class="col-sm-2 col-form-label">Password<br></label><br>
+    <div class="col-sm-4">
+        <input type="password" class="form-control" name = "password_1" id="password_1" required><br>
+    </div>
+</div>
+    <div class="row mb-3">
+        <label for="confirm_pass" class="col-sm-2 col-form-label">Confirm Password<br></label><br>
+        <div class="col-sm-4">
+            <input type="password" class="form-control" name = "password_2" id="password_2" required><br>
+        </div>
+    </div>
+    
+    <div> 
+        <p class="form-message"></p>
+    </div>
+
+    <div class="row mb-3">    
+    <label for="submit"><button type = "submit" name="submit" id="submit" onclick="addData()" class="btn btn-dark">Sign Up</button></label><br>
+</div>
+        
+    </form>
+
+    <!-- <label for="login"><button class="login">Login</button></label> -->
+</div>
+<div>
+<p class="login">Already Signed Up? Click here to <a href = "login.html">Login</a></p>
+</div>
+
+   
+</div>
+</body>
+</html>
